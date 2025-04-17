@@ -77,4 +77,115 @@
   }
 }
 
+.services {
+  background-color: #edf1fd;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 85px 0px 25px;
+    @extend %cabin-500;
+    font-size: 38px;
+    line-height: 125%;
+    color: #5d8bff;
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+  }
+
+  &__nav-btn {
+    width: 100%;
+    max-width: 221px;
+    height: 53px;
+    padding: 17px 62px;
+    color: #5d8bff;
+    border: 1px solid #5d8bff;
+    background-color: transparent;
+  }
+
+  &__nav-btn:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__slider {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto 137px;
+  }
+
+  &__slide {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 25px 20px;
+    background-color: #fff;
+    text-align: start;
+    margin: 10px;
+  }
+
+  &__slide-img {
+    margin-bottom: 15px;
+  }
+
+  &__slide-title {
+    @extend %cabin-500;
+    font-size: 21px;
+    line-height: 125%;
+    margin-bottom: 15px;
+    color: #141414;
+  }
+
+  &__slide-text {
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #5d5d65;
+    margin-bottom: 15px;
+  }
+
+  &__slide-order,
+  &__slide-learn {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: 53px;
+    font-size: 16px;
+    @extend %cabin-500;
+  }
+
+  &__slide-order {
+    background-color: #5d8bff;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  &__slide-learn {
+    border: 1px solid #5d8bff;
+    color: #5d8bff;
+    background-color: #fff;
+  }
+
+  .slick-btn {
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: -95px;
+  }
+
+  .slick-prev {
+    left: calc(50% - 50px);
+  }
+
+  .slick-next {
+    left: calc(50% + 50px);
+  }
+
+  //  Шоколадка слайд
+}
+
 @import "media";

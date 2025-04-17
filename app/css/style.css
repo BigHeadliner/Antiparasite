@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.main__form-label, .main__title, .general-btn {
+.services__slide-order, .services__slide-learn, .services__slide-title, .services__title, .main__form-label, .main__title, .general-btn {
   font-family: "Cabin-Medium", sans-serif;
   font-weight: 500;
 }
 
-.main__subtitle {
+.services__slide-text, .main__subtitle {
   font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
@@ -3118,4 +3118,92 @@ body {
   padding: 17px 62px;
   background-color: #5d8bff;
   color: #fff;
+}
+
+.services {
+  background-color: #edf1fd;
+}
+.services__inner {
+  text-align: center;
+}
+.services__title {
+  margin: 85px 0px 25px;
+  font-size: 38px;
+  line-height: 125%;
+  color: #5d8bff;
+}
+.services__nav {
+  margin-bottom: 30px;
+}
+.services__nav-btn {
+  width: 100%;
+  max-width: 221px;
+  height: 53px;
+  padding: 17px 62px;
+  color: #5d8bff;
+  border: 1px solid #5d8bff;
+  background-color: transparent;
+}
+.services__nav-btn:not(:last-child) {
+  margin-right: 15px;
+}
+.services__slider {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto 137px;
+}
+.services__slide {
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 25px 20px;
+  background-color: #fff;
+  text-align: start;
+  margin: 10px;
+}
+.services__slide-img {
+  margin-bottom: 15px;
+}
+.services__slide-title {
+  font-size: 21px;
+  line-height: 125%;
+  margin-bottom: 15px;
+  color: #141414;
+}
+.services__slide-text {
+  font-size: 16px;
+  line-height: 140%;
+  color: #5d5d65;
+  margin-bottom: 15px;
+}
+.services__slide-order, .services__slide-learn {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: 53px;
+  font-size: 16px;
+}
+.services__slide-order {
+  background-color: #5d8bff;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.services__slide-learn {
+  border: 1px solid #5d8bff;
+  color: #5d8bff;
+  background-color: #fff;
+}
+.services .slick-btn {
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: -95px;
+}
+.services .slick-prev {
+  left: calc(50% - 50px);
+}
+.services .slick-next {
+  left: calc(50% + 50px);
 }
