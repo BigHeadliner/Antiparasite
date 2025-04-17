@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.main__form-label, .main__title, .general-btn {
+  font-family: "Cabin-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.main__subtitle {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
 @font-face {
   font-family: "Cabin-Medium";
   font-weight: 500;
@@ -3029,4 +3039,83 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   border: 1px solid green;
+}
+
+.general-btn {
+  border-radius: 30px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.main__inner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.main__title {
+  margin: 180px auto 10px;
+  font-size: 65px;
+  color: #fff;
+  max-width: 781px;
+  line-height: 80px;
+  text-align: center;
+}
+.main__subtitle {
+  font-size: 17px;
+  line-height: 140%;
+  color: #fff;
+  margin: 0 auto 45px;
+  max-width: 530px;
+}
+.main__form {
+  width: 100%;
+  max-width: 1180px;
+  height: 161px;
+  border-radius: 15px;
+  background-color: #edf1fd;
+  border: 1px solid transparent;
+  padding: 38px 38px 43px 38px;
+  margin: 0 auto 203px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.main__form-label {
+  text-align: start;
+  font-size: 16px;
+  position: absolute;
+  top: -25px;
+  left: 1px;
+}
+.main__form-input {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 17px 25px;
+  width: 100%;
+  max-width: 265px;
+  height: 53px;
+}
+.main__form-btn {
+  padding: 17px 62px;
+  background-color: #5d8bff;
+  color: #fff;
 }

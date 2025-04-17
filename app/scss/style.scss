@@ -4,4 +4,77 @@
 @import "libs";
 @import "global";
 
+.main {
+  &__inner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+  &__title {
+    margin: 180px auto 10px;
+    @extend %cabin-500;
+    font-size: 65px;
+    color: #fff;
+    max-width: 781px;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend %roboto-400;
+    font-size: 17px;
+    line-height: 140%;
+    color: #fff;
+    margin: 0 auto 45px;
+    max-width: 530px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 1180px;
+    height: 161px;
+    border-radius: 15px;
+    background-color: #edf1fd;
+    border: 1px solid transparent;
+    padding: 38px 38px 43px 38px;
+    margin: 0 auto 203px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__form-label {
+    text-align: start;
+    @extend %cabin-500;
+    font-size: 16px;
+    position: absolute;
+    top: -25px;
+    left: 1px;
+  }
+
+  &__form-input {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 17px 25px;
+    width: 100%;
+    max-width: 265px;
+    height: 53px;
+  }
+
+  &__form-btn {
+    padding: 17px 62px;
+    background-color: #5d8bff;
+    color: #fff;
+  }
+}
+
 @import "media";
