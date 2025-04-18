@@ -2,7 +2,6 @@ $(function () {
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (e) {
-      
       e.preventDefault();
 
       // Перевіряємо, чи всі поля заповнені
@@ -23,8 +22,8 @@ $(function () {
         errorMessage += "Введіть область або місто.\n";
       }
       if (errorMessage) {
-        alert(errorMessage); 
-        return; 
+        alert(errorMessage);
+        return;
       }
     });
 
@@ -39,7 +38,7 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
-    rows: 2, 
+    rows: 2,
     // centerMode: false,
     // variableWidth: false,
     responsive: [
@@ -80,17 +79,5 @@ $(function () {
     ],
   });
 
-   var mixer = mixitup('.services__slider'); 
-
-  });
-
-
-
-
-  
-
-
-
-
-
-
+  var mixer = mixitup(".services__slider");
+});
