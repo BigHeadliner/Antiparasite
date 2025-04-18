@@ -106,6 +106,11 @@
     background-color: transparent;
   }
 
+  &__nav-btn.mixitup-control-active{ 
+    background-color:#5d8bff;
+    color:#fff;
+  }
+
   &__nav-btn:not(:last-child) {
     margin-right: 15px;
   }

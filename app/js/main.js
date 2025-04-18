@@ -2,7 +2,7 @@ $(function () {
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (e) {
-      // Зупиняємо стандартну поведінку форми
+      
       e.preventDefault();
 
       // Перевіряємо, чи всі поля заповнені
@@ -23,8 +23,8 @@ $(function () {
         errorMessage += "Введіть область або місто.\n";
       }
       if (errorMessage) {
-        alert(errorMessage); // Або показуємо це як HTML, якщо хочеш гарніший вигляд
-        return; // Зупиняємо подальшу обробку, щоб форма не відправилась
+        alert(errorMessage); 
+        return; 
       }
     });
 
@@ -39,7 +39,7 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
-    rows: 2, // Встановлюємо кілька рядів
+    rows: 2, 
     // centerMode: false,
     // variableWidth: false,
     responsive: [
@@ -80,27 +80,17 @@ $(function () {
     ],
   });
 
-  $(".featured-inner__nav button").on("click", function () {
-    var filter = $(this).data("filter");
-    $(".featured-inner__items").slick("slickUnfilter");
+   var mixer = mixitup('.services__slider'); 
 
-    if (filter == "villa") {
-      $(".featured-inner__items").slick(
-        "slickFilter",
-        ".featured-inner__villa"
-      );
-    } else if (filter == "apartment") {
-      $(".featured-inner__items").slick(
-        "slickFilter",
-        ".featured-inner__apartment"
-      );
-    } else if (filter == "all") {
-      $(".featured-inner__items").slick("slickUnfilter");
-    }
   });
 
-  $(".featured-inner__btn").on("click", function () {
-    $(".featured-inner__btn").removeClass("featured-inner__btn--active");
-    $(this).addClass("featured-inner__btn--active");
-  });
-});
+
+
+
+  
+
+
+
+
+
+

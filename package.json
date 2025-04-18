@@ -30,6 +30,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^4.0.31",
     "counterup2": "^2.0.2",
+    "mixitup": "^3.3.2",
     "save-dev": "^0.0.1-security"
   }
 }

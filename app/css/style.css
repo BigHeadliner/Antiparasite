@@ -3144,6 +3144,10 @@ body {
   border: 1px solid #5d8bff;
   background-color: transparent;
 }
+.services__nav-btn.mixitup-control-active {
+  background-color: #5d8bff;
+  color: #fff;
+}
 .services__nav-btn:not(:last-child) {
   margin-right: 15px;
 }
