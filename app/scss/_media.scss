@@ -22,6 +22,37 @@
   }
 }
 
+@media (max-width: 938px) {
+  // SERVICES
+
+  .services__title {
+    margin: 55px 0px 25px;
+  }
+}
+
+@media (max-width: 910px) {
+  //   //  SLICK
+
+  //   .slick-btn {
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //     z-index: 5;
+  //   }
+
+  //   .services .slick-prev {
+  //     left: 10%;
+  //   }
+
+  //   .services .slick-next {
+  //     left: 80%;
+  //   }
+
+  .services__slider {
+    border: 3px solid #5d8bff;
+  }
+}
+
 @media (max-width: 873px) {
   // MAIN
 
@@ -31,6 +62,17 @@
 
   .main__form {
     margin: 0 auto 97px;
+  }
+}
+
+@media (max-width: 755px) {
+  // SERVICES
+
+  .services__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
   }
 }
 
